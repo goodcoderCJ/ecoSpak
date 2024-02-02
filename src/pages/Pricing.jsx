@@ -4,7 +4,7 @@ import { FaX } from "react-icons/fa6";
 function Pricing() {
   return (
     <>
-      <div className="pricing-section mb-[15em] sm:mb-[25em] md:mb-[25em] lg:mb-[25em]">
+      <div className="pricing-section mb-[10em] sm:mb-[15em] md:mb-[25em] lg:mb-[25em]">
         <div className="pricing-wrapper wrap py-[3em]">
           <div className="pricing-section-headings mt-[2em] mb-[3em]">
             <h1 className="text-[#00558e] text-[0.8rem] text-center font-bold mb-[0.6em]">
