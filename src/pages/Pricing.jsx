@@ -14,7 +14,7 @@ function Pricing() {
               We Offer Best Price to Help You
             </h3>
           </div>
-          <div className="pricing-section-grid mb-[6em]">
+          <div className="pricing-section-grid mb-[12em]">
             <div className="pricing-col-1 rounded-tl-[10px] rounded-tr-[10px] shadow-md">
               <div className="clipit pricing-col-1-bg rounded-tl-[10px] rounded-tr-[10px] rounded-br-[10px] rounded-bl-[10px]  ">
                 <div className="pricing-bg-content">
