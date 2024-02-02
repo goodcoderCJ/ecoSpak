@@ -17,7 +17,7 @@ function App() {
     <>
       <Suspense
         fallback={
-          <div className="flex jusify-center items-center">
+          <div className="flex justify-center items-center">
             <div className="spinner"></div>
             <p>Hi, This page is Loading...</p>
           </div>
