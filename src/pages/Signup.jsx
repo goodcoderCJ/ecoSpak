@@ -12,7 +12,7 @@ import {
   GoogleAuthProvider,
   signInWithPopup,
 } from "firebase/auth";
-import {auth} from "../config"
+import { auth } from "../config";
 import { getFirestore, doc, setDoc } from "firebase/firestore";
 
 function Signup() {
@@ -149,8 +149,8 @@ function Signup() {
 
   return (
     <>
-      <div className="signup-page">
-        <div className="backg-color bg-[#00558e] py-[2em] h-[100vh]">
+      <div className="signup-page ">
+        <div className="backg-color bg-[#00558e] py-[2em] 100vh">
           {/* <ToastContainer /> */}
           <div className="signup-logo flex items-center justify-center my-[2em] ">
             <img src={logo} alt="" width="200" height="200" />

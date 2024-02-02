@@ -17,9 +17,11 @@ function App() {
     <>
       <Suspense
         fallback={
-          <div className="flex flex-col justify-center items-center 100vh">
-            <div className="spinner flex items-center justify-center"></div>
-            <p>Hi, This page is Loading...</p>
+          <div className="spinner-wrap  100vh  py-[15em] flex items-center justify-center">
+            <div className="h-[50%] flex flex-col justify-center items-center ">
+              <div className="spinner"></div>
+              <p>Hi! This page is Loading...</p>
+            </div>
           </div>
         }
       >

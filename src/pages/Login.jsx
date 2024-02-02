@@ -1,4 +1,4 @@
-import { FaStar, FaEye, FaEyeSlash } from "react-icons/fa6";
+import { FaEye, FaEyeSlash } from "react-icons/fa6";
 import { useState } from "react";
 
 import google from "../assets/google.png";
@@ -13,7 +13,7 @@ import {
   GoogleAuthProvider,
   signInWithPopup,
 } from "firebase/auth";
-import {auth} from "../config"
+import { auth } from "../config";
 
 function Login() {
   const navigate = useNavigate();
@@ -130,7 +130,7 @@ function Login() {
   return (
     <>
       <div className="login-page">
-        <div className="backg-color bg-[#00558c] py-[2em] h-[100vh]">
+        <div className="backg-color bg-[#00558c] py-[2em] 100vh">
           {/* <ToastContainer /> */}
           <div className="login-logo flex justify-center items-center my-[2em]">
             <img src={logo} alt="" width="200" height="200" />
@@ -212,9 +212,6 @@ function Login() {
                 <div className="login-role-wrapper">
                   <p className="flex items-center font-medium text-[0.9rem] mb-[0.5em]">
                     CHOOSE YOUR ROLE{" "}
-                    <span className="ml-[0.3em]">
-                      <FaStar className="text-[0.3rem] text-[red]" />
-                    </span>{" "}
                   </p>
                   <div className="login-user-role">
                     <input

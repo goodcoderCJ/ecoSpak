@@ -42,7 +42,7 @@ function Forgotten() {
   };
   return (
     <div className="forgotten-page mb-[0em]">
-      <div className="forgotten-bg bg-[#00558e] py-[4em] mb-[0em] h-[100vh]">
+      <div className="forgotten-bg bg-[#00558e] py-[4em] mb-[0em] 100vh">
         {/* <ToastContainer /> */}
         <div className="signup-logo flex items-center justify-center my-[2em] ">
           <img src={logo} alt="" width="200" height="200" />
@@ -81,7 +81,7 @@ function Forgotten() {
               "
               >
                 <button
-                  className="w-[100%] h-[40px] bg-[#edc954] text-[1.2rem] font-bold "
+                  className="w-[100%] h-[40px] bg-[#edc954] text-[0.8rem] sm:text-[0.9rem] md:text-[1.2rem]  lg:text-[1.2rem] font-bold "
                   disabled={notValid}
                   onClick={(e) => {
                     resetPassword(e);
