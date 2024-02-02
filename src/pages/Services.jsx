@@ -8,7 +8,7 @@ import { FaGlassWaterDroplet } from "react-icons/fa6";
 function Services() {
   return (
     <>
-      <div className="services-section bg-[#f5f3f3] mb-[1em] sm:mb-[2em] md:mb-[20em] lg:mb-[25em]">
+      <div className="services-section bg-[#f5f3f3] mb-[1em] sm:mb-[2em] md:mb-[15em] lg:mb-[25em]">
         <div className="services-wrapper wrap py-[3em]">
           <div className="services-content-wrapper">
             <div className="services-first-col text-center">
@@ -20,7 +20,7 @@ function Services() {
                 Makes the Difference
               </h3>
             </div>
-            <div className="services-second-col services-grid">
+            <div className="services-second-col services-grid mb-[4em]">
               <div className="services-grid-child-1">
                 <div className="services-icon flex items-center justify-center mb-[0.8em]">
                   <FaHouse />

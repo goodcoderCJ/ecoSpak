@@ -48,7 +48,7 @@ function Footer() {
                   Services
                 </Link>
                 <Link to="/pricing" className="mb-[0.4em]">
-                  Princing
+                  Pricing
                 </Link>
                 <button className=" text-left mb-[0.4em]">Contact Us</button>
                 <Link to="/login" className="mb-[0.4em]">
