@@ -8,8 +8,8 @@ import { FaGlassWaterDroplet } from "react-icons/fa6";
 function Services() {
   return (
     <>
-      <div className="services-section bg-[#f5f3f3] pb-[25em]">
-        <div className="services-wrapper wrap">
+      <div className="services-section bg-[#f5f3f3] mb-[15em] sm:mb-[25em] md:mb-[25em] lg:mb-[25em]">
+        <div className="services-wrapper wrap py-[3em]">
           <div className="services-content-wrapper">
             <div className="services-first-col text-center">
               <h1 className="text[0.8rem] font-bold text-[#00558e]">
