@@ -12,7 +12,7 @@ import {
   GoogleAuthProvider,
   signInWithPopup,
 } from "firebase/auth";
-import { auth } from "../config";
+import {auth} from "../config"
 import { getFirestore, doc, setDoc } from "firebase/firestore";
 
 function Signup() {
