@@ -15,7 +15,14 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 function App() {
   return (
     <>
-      <Suspense fallback={<div>Hi, This page is Loading...</div>}>
+      <Suspense
+        fallback={
+          <div className="flex jusify-center items-center">
+            <div className="spinner"></div>
+            <p>Hi, This page is Loading...</p>
+          </div>
+        }
+      >
         <BrowserRouter>
           <Routes>
             <Route path="/login" element={<Login />} />

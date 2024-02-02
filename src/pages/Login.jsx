@@ -130,7 +130,7 @@ function Login() {
   return (
     <>
       <div className="login-page">
-        <div className="backg-color bg-[#00558c] py-[2em]">
+        <div className="backg-color bg-[#00558c] py-[2em] h-[100vh]">
           {/* <ToastContainer /> */}
           <div className="login-logo flex justify-center items-center my-[2em]">
             <img src={logo} alt="" width="200" height="200" />
