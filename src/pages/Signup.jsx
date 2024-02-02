@@ -87,6 +87,7 @@ function Signup() {
         // toast.success("Signed up successfully" + user, {
         //   position: toast.POSITION.TOP_RIGHT,
         // });
+        navigate("/");
         console.log(user);
       })
       .catch((error) => {
