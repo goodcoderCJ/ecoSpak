@@ -1,35 +1,36 @@
 import "./App.css";
-import Layout from "./components/Layout";
-import Home from "./pages/Home";
-import About from "./pages/About";
-import Pricing from "./pages/Pricing";
-import Services from "./pages/Services";
-import Login from "./pages/Login";
-import Signup from "./pages/Signup";
-import Forgotten from "./pages/Forgotten";
-import Team from "./pages/Team";
+import { lazy, Suspense } from "react";
+const Layout = lazy(() => import("./components/Layout"));
+const Home = lazy(() => import("./pages/Home"));
+const About = lazy(() => import("./pages/About"));
+const Pricing = lazy(() => import("./pages/Pricing"));
+const Services = lazy(() => import("./pages/Services"));
+const Login = lazy(() => import("./pages/Login"));
+const Signup = lazy(() => import("./pages/Signup"));
+const Forgotten = lazy(() => import("./pages/Forgotten"));
+const Team = lazy(() => import("./pages/Team"));
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
     <>
-      <BrowserRouter>
-        <Routes>
-          <Route path="/login" element={<Login />} />
-          <Route path="/signup" element={<Signup />} />
-          <Route path="/team" element={<Team />} />
-          <Route path="/forgotten" element={<Forgotten />} />
-          <Route path="/" element={<Layout />}>
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/pricing" element={<Pricing />} />
-            <Route path="/services" element={<Services />} />
-
-           
-          </Route>
-        </Routes>
-      </BrowserRouter>
+      <Suspense fallback={<div>Hi, This page is Loading...</div>}>
+        <BrowserRouter>
+          <Routes>
+            <Route path="/login" element={<Login />} />
+            <Route path="/signup" element={<Signup />} />
+            <Route path="/team" element={<Team />} />
+            <Route path="/forgotten" element={<Forgotten />} />
+            <Route path="/" element={<Layout />}>
+              <Route path="/" element={<Home />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/pricing" element={<Pricing />} />
+              <Route path="/services" element={<Services />} />
+            </Route>
+          </Routes>
+        </BrowserRouter>
+      </Suspense>
     </>
   );
 }
