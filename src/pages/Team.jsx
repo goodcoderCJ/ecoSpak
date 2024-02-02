@@ -42,7 +42,7 @@ function Team() {
   return (
     <>
       <div className="team-page mb-[0em]">
-        <div className="backg-color bg-[#00558e] py-[2em] 100vh">
+        <div className="backg-color bg-[#00558e] py-[2em] h-[100vh]">
           <div className="team-logo flex items-center justify-center ">
             <img src={logo} alt="" width="200" height="200" />
           </div>
