@@ -41,13 +41,13 @@ function Forgotten() {
       });
   };
   return (
-    <div className="forgotten-page">
-      <div className="forgotten-bg bg-[#00558e] py-[2em]">
+    <div className="forgotten-page mb-[0em]">
+      <div className="forgotten-bg bg-[#00558e] py-[4em] mb-[0em] h-[100vh]">
         {/* <ToastContainer /> */}
         <div className="signup-logo flex items-center justify-center my-[2em] ">
           <img src={logo} alt="" width="200" height="200" />
         </div>
-        <div className="form-content-position w-[60%] mx-auto bg-[#ffffff] px-[2em] py-[1em]">
+        <div className="form-content-position w-[60%] mx-auto bg-[#ffffff] px-[2em] py-[2em]">
           <div className="forgotten-heading  mt-[1em]">
             <h1 className="text-[1.4rem] font-extrabold text-[#161616] text-center">
               Welcome!
@@ -76,7 +76,10 @@ function Forgotten() {
                   className="input outline-none w-[100%] py-[0.5em] pl-[0.5em] "
                 />
               </div>
-              <div className="forgoten-btn flex justify-center items-center mt-[1.5em]">
+              <div
+                className="forgoten-btn flex justify-center items-center mt-[1.5em] mb-[2em]
+              "
+              >
                 <button
                   className="w-[100%] h-[40px] bg-[#edc954] text-[1.2rem] font-bold "
                   disabled={notValid}

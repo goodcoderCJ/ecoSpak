@@ -632,7 +632,8 @@ nav a {
 }
 .signup-form-control,
 .signup-form-contr input,
-.login-form-control {
+.login-form-control,
+.forgotten-form-control {
   border-bottom: 1px solid rgb(170, 170, 170);
 }
 
