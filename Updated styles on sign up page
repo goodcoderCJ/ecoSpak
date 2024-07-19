@@ -148,8 +148,8 @@ function Signup() {
   };
 
   return (
-    <>
-      <div className="signup-page ">
+    <div className="flex min-h-screen">
+      <div className="signup-page flex-1">
         <div className="backg-color bg-[#00558e] py-[2em] h-[100vh]">
           {/* <ToastContainer /> */}
           <div className="signup-logo flex items-center justify-center my-[2em] ">
@@ -333,7 +333,7 @@ function Signup() {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 
