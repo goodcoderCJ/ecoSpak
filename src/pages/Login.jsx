@@ -129,15 +129,15 @@ function Login() {
 
   return (
     <div className="flex min-h-screen">
-      <div className="login-page flex-1">
-        <div className="backg-color bg-[#00558c] py-[2em] h-[100vh]">
+      <div className="login-page flex-1 py-1">
+        <div className="backg-color bg-[#00558c] py-[2em] ">
           {/* <ToastContainer /> */}
           <div className="login-logo flex justify-center items-center my-[2em]">
             <img src={logo} alt="" width="200" height="200" />
           </div>
           <div className="form-content-position w-[60%] mx-auto my-0 bg-[#ffffff] px-[2em] py-[3em]">
             <div className="login-heading  mt-[1em]">
-              <h1 className="text-[1.4rem] font-extrabold text-[#161616] text-center">
+              <h1 className="text-[1.2rem] md:text-[1.4rem] font-extrabold text-[#161616] text-center">
                 Welcome Back!
               </h1>
               <p className="text-[0.9rem] font-medium text-center">
@@ -266,7 +266,11 @@ function Login() {
                       facebookSignIn(e);
                     }}
                   >
-                    <img src={facebook} alt="" className="w-[15px] h-[15px]" />
+                    <img
+                      src={facebook}
+                      alt=""
+                      className="w-[20px] md:w-[15px] h-[20px] md:h-[15px]"
+                    />
                   </button>
                   <button
                     className="bg-[#ffffff] p-[0.8em]  rounded-tl-[4px] rounded-tr-[4px]  rounded-bl-[4px] rounded-br-[4px] border border-[#00558c]"
@@ -274,7 +278,11 @@ function Login() {
                       googleSignIn(e);
                     }}
                   >
-                    <img src={google} alt="" className="w-[15px] h-[15px]" />
+                    <img
+                      src={google}
+                      alt=""
+                      className="w-[20px] md:w-[15px] h-[20px] md:h-[15px]"
+                    />
                   </button>
                 </div>
               </div>
